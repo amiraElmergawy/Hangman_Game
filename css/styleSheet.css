@@ -1,0 +1,50 @@
+.main {
+    border          : 2px solid rgb(185, 182, 182);
+    background-color: #F1DBDB;
+    color           : rgb(97, 95, 95);
+    height          : 100px;
+    position: relative;
+}
+
+.sub {
+    height: 300px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.font, h1 {
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color           : #707070;
+}
+
+.back-btn{
+    border          : 2px solid rgb(185, 182, 182);
+    background-color: #F1DBDB;
+    color           : #707070;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.smaller-font{
+    font-size: 55px;
+}
+
+.smallest-font{
+    font-size: 20px;
+}
+
+input {
+    padding: 5%;
+}
+/* input:focus{
+    border          : 2px solid rgb(122, 121, 121);
+} */
