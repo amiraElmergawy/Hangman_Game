@@ -8,6 +8,7 @@ let word = '', // convert word that player one guessed to array
     secondPageDiv = document.getElementById('secondDiv'),
     thirdPageDiv = document.getElementById('thirdDiv'),
     backBtnListner = document.getElementById('backBtn'),
+    scoreDiv = document.getElementById('scoreBtn'),
     messageDisplay = document.getElementById('messageDisplay'),
     imageDisplay = document.getElementById('imageDisplay'),
     lettersDisplay = document.getElementById('letters'),
@@ -29,10 +30,12 @@ let word = '', // convert word that player one guessed to array
         });
         wordLength = str.length;
     };
+    scoreDiv.innerText = lifeTimes;
 onePlayerListner.addEventListener('click', (e) => {
     firstPageDiv.classList.add('d-none');
     thirdPageDiv.classList.remove('d-none');
     backBtn.classList.remove('d-none');
+    scoreDiv.classList.remove('d-none');
     let randomString = Math.random().toString(36).substring(2, 8);
     console.log(randomString)
     word = Array.from(randomString);
@@ -42,11 +45,13 @@ twoPlayersListner.addEventListener('click', (e) => {
     firstPageDiv.classList.add('d-none');
     secondPageDiv.classList.remove('d-none');
     backBtn.classList.remove('d-none');
+    scoreDiv.classList.remove('d-none');
 });
 backBtnListner.addEventListener('click', (e) => {
     thirdPageDiv.classList.add('d-none');
     secondPageDiv.classList.add('d-none');
     backBtn.classList.add('d-none');
+    scoreDiv.classList.add('d-none');
     firstPageDiv.classList.remove('d-none');
     // when user back to home screen delete all saved values
     word = '';
@@ -137,6 +142,7 @@ document.getElementById('charForm').addEventListener('submit', async e => {
     } else {
         alert('Please, enter a correct character');
     }
+    scoreDiv.innerText = lifeTimes;
     document.getElementById('charForm').reset()
 })
 
