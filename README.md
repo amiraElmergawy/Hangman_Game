@@ -3,4 +3,5 @@
                 -web app. created by using HTML5, JS, CSS, and Bootstrap.
                 
                 
-For Live Preview: amiraelmergawy.github.io/Hangman_Game/
+# For Live Preview: 
+https://amiraelmergawy.github.io/Hangman_Game/
